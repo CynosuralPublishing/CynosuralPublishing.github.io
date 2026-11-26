@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cynosural Publishing</title>
+  <meta name="description" content="Cynosural Publishing makes simple, fun apps and gear: ScoreMonkey, Easy Caddie, and Nice Drive! Still a 5 golf merch.">
+  <link rel="icon" href="images/scoremonkey-icon.png">
+  <style>
+    :root {
+      --bg: #f6f7f4;
+      --card: #ffffff;
+      --ink: #15201b;
+      --muted: #5b6862;
+      --line: #d9dfdb;
+      --accent: #0b5f8f;
+      --monkey: #076297;
+      --golf: #1b5e3b;
+      --sail: #b45f06;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1513;
+        --card: #18201d;
+        --ink: #e7eeea;
+        --muted: #9fada6;
+        --line: #2a3530;
+        --accent: #6cc0f0;
+        --monkey: #6cc0f0;
+        --golf: #7fcf9f;
+        --sail: #f0a95a;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main { max-width: 52rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+    header { margin-bottom: 2.5rem; }
+    h1 { font-size: 2.4rem; line-height: 1.1; margin: 0 0 0.5rem; }
+    .tagline { color: var(--muted); font-size: 1.2rem; margin: 0; }
+    h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 2.5rem 0 1rem; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--c, var(--accent));
+      border-radius: 14px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-head { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; }
+    .card img { width: 56px; height: 56px; border-radius: 13px; }
+    .card h3 { margin: 0; font-size: 1.25rem; color: var(--c, var(--ink)); }
+    .card p { margin: 0 0 1rem; flex: 1; }
+    .links { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; font-size: 0.95rem; }
+    a { color: var(--accent); }
+    .button {
+      display: inline-block;
+      background: var(--c, var(--accent));
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.45rem 0.9rem;
+      border-radius: 8px;
+    }
+    @media (prefers-color-scheme: dark) { .button { color: #0f1513; } }
+    .soon { color: var(--muted); font-size: 0.95rem; font-style: italic; }
+    .social { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .social a {
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 999px;
+      padding: 0.4rem 1rem;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Cynosural Publishing</h1>
+      <p class="tagline">All things good, fun and enjoyable.</p>
+    </header>
+
+    <h2>Apps</h2>
+    <div class="grid">
+      <section class="card" style="--c: var(--monkey)">
+        <div class="card-head">
+          <img src="images/scoremonkey-icon.png" alt="ScoreMonkey app icon">
+          <h3>ScoreMonkey</h3>
+        </div>
+        <p>A big, simple score keeper for game night. Up to six players, bright score boxes everyone can read, Undo and Redo, and a full game log.</p>
+        <div class="links">
+          <!-- APP STORE LINK: replace # with the ScoreMonkey App Store link -->
+          <a class="button" href="#" data-todo="scoremonkey-app-store">App Store</a>
+          <a href="https://cynosuralpublishing.github.io/easycaddie/scoremonkey/support.html">Support</a>
+          <a href="https://cynosuralpublishing.github.io/easycaddie/scoremonkey/privacy-policy.html">Privacy</a>
+        </div>
+      </section>
+
+      <section class="card" style="--c: var(--golf)">
+        <div class="card-head">
+          <h3>Easy Caddie</h3>
+        </div>
+        <p>Pick the right club every time. Enter your own carry and roll distances, then type the distance to your target and Easy Caddie suggests the club.</p>
+        <div class="links">
+          <!-- APP STORE LINK: replace # with the Easy Caddie App Store link -->
+          <a class="button" href="#" data-todo="easycaddie-app-store">App Store</a>
+          <a href="https://cynosuralpublishing.github.io/easycaddie/support.html">Support</a>
+          <a href="https://cynosuralpublishing.github.io/easycaddie/privacy-policy.html">Privacy</a>
+        </div>
+      </section>
+    </div>
+
+    <h2>Shop</h2>
+    <div class="grid">
+      <section class="card" style="--c: var(--golf)">
+        <div class="card-head">
+          <h3>Nice Drive! Still a 5</h3>
+        </div>
+        <p>Golf humor for the rest of us, for anyone whose best drive still ends with a bogey.</p>
+        <div class="links">
+          <!-- ETSY LINK: replace # with the Etsy shop link -->
+          <a class="button" href="#" data-todo="etsy">Shop on Etsy</a>
+        </div>
+      </section>
+
+      <section class="card" style="--c: var(--sail)">
+        <div class="card-head">
+          <h3>Sailcraft: Regatta</h3>
+        </div>
+        <p>A sailing race game where trim, wind shifts and gusts really matter. Three boats, from a nimble dinghy to an offshore yacht.</p>
+        <p class="soon">In development.</p>
+      </section>
+    </div>
+
+    <!-- SOCIAL: add one <a> per account, then remove the hidden attribute -->
+    <h2 hidden data-todo="social">Follow along</h2>
+    <div class="social" hidden data-todo="social">
+    </div>
+
+    <footer>
+      Questions? Email <a href="mailto:cynosural.publishing@gmail.com">cynosural.publishing@gmail.com</a>
+      <br>&copy; 2026 Cynosural Publishing
+    </footer>
+  </main>
+</body>
+</html>
